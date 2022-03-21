@@ -1,3 +1,17 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $brand-color;
+  color: #f9faf8;
+  & .logo {
+    padding: 1rem 1rem;
+  }
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+}
