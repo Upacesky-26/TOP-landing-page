@@ -436,15 +436,23 @@ body {
 }
 
 header {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: #1f2937;
+  align-items: baseline;
+  width: max(500px, 80%);
   color: #f9faf8;
 }
-header .logo {
+.header-wrapper .logo {
   padding: 1rem 1rem;
 }
-header ul {
+.header-wrapper ul {
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -457,9 +465,47 @@ footer {
   padding: 1.5rem;
 }
 
-.hero {
+.hero-section {
+  display: flex;
+  justify-content: center;
   background-color: #1f2937;
   color: #f9faf8;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  max-width: 1180px;
+}
+
+.description {
+  flex: 1;
+}
+
+.picture {
+  flex: 1;
+}
+
+.random-info {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1180px;
+}
+
+.quote {
+  background-color: #e5e7eb;
+}
+.quote p {
+  text-align: end;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

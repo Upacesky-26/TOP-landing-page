@@ -2,9 +2,16 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 header {
+  background-color: $brand-color;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: $brand-color;
+  align-items: baseline;
+  width: max(500px, 80%);
   color: #f9faf8;
   & .logo {
     padding: 1rem 1rem;

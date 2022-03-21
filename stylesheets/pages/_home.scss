@@ -1,7 +1,42 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.hero {
+
+.hero-section {
+  display: flex;
+  justify-content: center;
   background-color: $brand-color;
   color: #f9faf8;
+  width: 100%;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  max-width: $max-width;
+}
+.description {
+  flex: 1;
+}
+.picture {
+  flex: 1;
+}
+
+.random-info {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  max-width: $max-width;
+}
+
+.quote {
+  background-color: $light-grey;
+  & p {
+    text-align: end;
+    font-weight: 700;
+  }
 }
