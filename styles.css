@@ -392,7 +392,7 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
+  max-width: 960px;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -465,9 +465,15 @@ footer {
   padding: 1.5rem;
 }
 
-.btn-cta {
+button {
   all: unset;
-  color: white;
+  padding: 0.4em 1.2em;
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.btn-cta {
   border: solid 1px white;
   border-radius: 0.5em;
   background-color: none;
@@ -475,6 +481,14 @@ footer {
   font-size: medium;
   font-weight: 600;
   cursor: pointer;
+}
+
+.btn-hero {
+  border: none;
+  border-radius: 0.5em;
+  background-color: #3882f6;
+  padding: 0.4em 1.2em;
+  margin: 1em 0;
 }
 
 .hero-section {
@@ -488,8 +502,9 @@ footer {
 .hero {
   display: flex;
   justify-content: center;
-  padding: 4rem 1.5rem;
-  max-width: 1180px;
+  gap: 1rem;
+  padding: 4rem 0;
+  width: 960px;
 }
 
 .description {
@@ -508,12 +523,22 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 2rem 0 4rem 0;
 }
 
 .cards {
   display: flex;
   justify-content: center;
-  max-width: 1180px;
+  max-width: 960px;
+  gap: 1rem;
+  font-size: medium;
+}
+
+.card-img {
+  border: solid 4px #3882f6;
+  border-radius: 1em;
+  width: 80%;
+  aspect-ratio: 1;
 }
 
 .quote-section {
@@ -525,7 +550,11 @@ footer {
 }
 
 .quote {
-  max-width: 1180px;
+  max-width: 960px;
+}
+.quote em {
+  font-size: 36px;
+  font-weight: 200;
 }
 .quote p {
   text-align: end;
@@ -545,7 +574,7 @@ footer {
   color: white;
   padding: 2rem 6rem;
   margin: 3rem;
-  width: 1180px;
+  width: 960px;
   border-radius: 1rem;
 }
 
@@ -563,6 +592,10 @@ footer {
 .cta-button {
   flex: 1;
   text-align: center;
+}
+
+footer {
+  font-size: small;
 }
 
 /*# sourceMappingURL=styles.css.map */

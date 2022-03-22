@@ -12,8 +12,9 @@
 .hero {
   display: flex;
   justify-content: center;
-  padding: 4rem 1.5rem;
-  max-width: $max-width;
+  gap: 1rem;
+  padding: 4rem 0;
+  width: $max-width;
 }
 .description {
   flex: 1;
@@ -30,11 +31,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 2rem 0 4rem 0;
 }
 .cards {
   display: flex;
   justify-content: center;
   max-width: $max-width;
+  gap: 1rem;
+  font-size: medium;
+}
+.card-img {
+  border: solid 4px $blue-button;
+  border-radius: 1em;
+  width: 80%;
+  aspect-ratio: 1;
 }
 
 .quote-section {
@@ -46,6 +56,10 @@
 }
 .quote {
   max-width: $max-width;
+  & em {
+    font-size: 36px;
+    font-weight: 200;
+  }
   & p {
     text-align: end;
     font-weight: 700;
@@ -79,4 +93,8 @@
 .cta-button {
   flex: 1;
   text-align: center;
+}
+
+footer {
+  font-size: small;
 }

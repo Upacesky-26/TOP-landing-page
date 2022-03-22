@@ -2,9 +2,15 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.btn-cta {
+button {
   all: unset;
-  color: white;
+  padding: 0.4em 1.2em;
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.btn-cta {
   border: solid 1px white;
   border-radius: 0.5em;
   background-color: none;
@@ -12,4 +18,12 @@
   font-size: medium;
   font-weight: 600;
   cursor: pointer;
+}
+
+.btn-hero {
+  border: none;
+  border-radius: 0.5em;
+  background-color: $blue-button;
+  padding: 0.4em 1.2em;
+  margin: 1em 0;
 }
