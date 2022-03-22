@@ -20,23 +20,63 @@
 }
 .picture {
   flex: 1;
+  background-color: $light-grey;
+  border-radius: 0.5rem;
 }
 
 .random-info {
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   max-width: $max-width;
 }
 
-.quote {
+.quote-section {
   background-color: $light-grey;
+  padding: 4rem 3rem 3rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote {
+  max-width: $max-width;
   & p {
     text-align: end;
     font-weight: 700;
   }
+}
+.cta-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cta {
+  display: flex;
+  align-items: center;
+  background-color: $blue-button;
+  color: white;
+  padding: 2rem 6rem;
+  margin: 3rem;
+  width: $max-width;
+  border-radius: 1rem;
+}
+.cta-text {
+  flex: 3;
+  & h2 {
+    margin: 0;
+  }
+  & p {
+    margin: 0;
+    font-size: medium;
+  }
+}
+.cta-button {
+  flex: 1;
+  text-align: center;
 }

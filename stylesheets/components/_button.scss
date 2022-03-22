@@ -1,3 +1,15 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn-cta {
+  all: unset;
+  color: white;
+  border: solid 1px white;
+  border-radius: 0.5em;
+  background-color: none;
+  padding: 0.4em 1.2em;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
